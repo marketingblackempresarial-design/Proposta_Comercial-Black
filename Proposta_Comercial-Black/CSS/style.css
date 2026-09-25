@@ -400,11 +400,40 @@ h1, h2, h3 { font-family: var(--fonte-titulo); font-weight: 800; letter-spacing:
 .footer-meta a { transition: color .2s; }
 .footer-meta a:hover { color: var(--verde); }
 #btn-aceitar-proposta {
+  border: none;             /* Remove a borda padrão do navegador */
+  outline: none;            /* Remove a linha preta/branca externa */
+  box-shadow: none;    
+  appearance: none;     /* Garante que nenhuma sombra crie essa linha */
+  display: inline-flex;     /* Garante alinhamento correto dos ícones e texto */
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  background-color: #20e382 !important;
+  outline: none !important;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
   display: inline-flex;
   align-items: center;
-  gap: 8px; /* Espaçamento entre o ícone, o texto e a seta */
-  text-decoration: none; /* Remove o sublinhado padrão dos links */
-  cursor: pointer;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25), 
+    0 0 10px rgba(32, 227, 130, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+ 
+}
+#btn-aceitar-proposta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35), 
+              0 0 15px rgba(32, 227, 130, 0.5);
+}
+.container-do-botao {
+  background: transparent !important;
+  border: none !important;
+  padding: 0;
 }
 
 /* ==========================================================================
