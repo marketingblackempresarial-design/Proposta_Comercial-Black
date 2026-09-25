@@ -399,6 +399,13 @@ h1, h2, h3 { font-family: var(--fonte-titulo); font-weight: 800; letter-spacing:
 .footer-meta { display: flex; gap: 10px; align-items: center; font-size: 12px; color: var(--texto-claro-muted); }
 .footer-meta a { transition: color .2s; }
 .footer-meta a:hover { color: var(--verde); }
+#btn-aceitar-proposta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Espaçamento entre o ícone, o texto e a seta */
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  cursor: pointer;
+}
 
 /* ==========================================================================
    RESPONSIVIDADE
